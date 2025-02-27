@@ -46,3 +46,5 @@ next-env.d.ts
 # Vercel deployment files
 .vercel
 .vercel_build_output/
+
+.vercel
