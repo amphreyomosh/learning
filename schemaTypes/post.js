@@ -1,17 +1,30 @@
 export default {
-    name: "post",
-    title: "Post",
+    name: "landingPage",
+    title: "Landing Page",
     type: "document",
     fields: [
       {
-        name: "title",
-        title: "Title",
+        name: "heroTitle",
+        title: "Hero Title",
         type: "string",
       },
       {
-        name: "body",
-        title: "Body",
-        type: "text",
+        name: "heroImage",
+        title: "Hero Image",
+        type: "image",
+        options: { hotspot: true },
+      },
+      {
+        name: "introText",
+        title: "Intro Text",
+        type: "array",
+        of: [{ type: "block" }],
+      },
+      {
+        name: "galleryImages",
+        title: "Gallery Images",
+        type: "array",
+        of: [{ type: "image", options: { hotspot: true } }],
       },
     ],
   };
